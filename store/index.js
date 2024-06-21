@@ -1,11 +1,6 @@
-import { createStore } from 'redux';
+import { legacy_createStore as createStore } from 'redux';
+import counterReducer from './reducers/counter';
 
-const initialState = {};
-
-const rootReducer = (state = initialState, action) => {
-  return state;
-};
-
-const store = createStore(rootReducer);
+const store = createStore(counterReducer);
 
 export default store;
